@@ -43,8 +43,9 @@ class Pile():
                 self.last = self.last.prev
 
             
-                
-i = "()[]{}"
+
+i = "{[]{"
+print(i)
 
 model  = Pile()
 print(model.solution(i))

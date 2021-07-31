@@ -45,8 +45,8 @@ class HashMap():
                     print([e, result])
 
 
-values = [3,3]
-target = 6
+nums = [2, 7, 11, 15]
+target = 9
 
-classe = HashMap(values)
+classe = HashMap(nums)
 classe.solution(target)
