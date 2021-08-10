@@ -7,7 +7,8 @@ class TreeNode:
         self.left = left
         self.right = right
 
-root = TreeNode( 1,  TreeNode( 2,  TreeNode( 3,  None,  None),  TreeNode( 4,  None,  None)),  TreeNode( 2,  TreeNode( 4,  None,  None),  TreeNode( 3,  None,  None)))
+root = TreeNode( 1,  TreeNode( 2,  TreeNode( 2,  None,  None),  None),  TreeNode( 2,  TreeNode( 2,  None,  None),  None))
+
 
 def inorderLeft(result, leftnode):
     if leftnode != None:
@@ -21,9 +22,16 @@ def inorderRight(result, rightnode):
         result.append(rightnode.val)
         inorderRight(result, rightnode.right)
 
+
+        
+
 inorderLeft(result, root.left)
+x = len(result)
 result.append(root.val)
 inorderRight(result, root.right)
+y = len(result) - 1
+
+print(x, y)
 
 s = 0
 e = len(result) - 1
@@ -32,8 +40,8 @@ while s != e:
     if result[s] == result[e]:
         s += 1
         e -= 1
-    else:
-        print(False)
+    """ else:
+        print(False) """
 print(True)
 
 print(result)
