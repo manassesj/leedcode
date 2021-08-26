@@ -14,5 +14,5 @@ else:
         prev = curr_number
         curr_number = sm
     print(fib)
-
+ 
 
