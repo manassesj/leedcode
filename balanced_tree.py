@@ -9,7 +9,7 @@ class TreeNode:
 
 
 
-nums = [-10,-3,0,5,9,10]
+nums = [-11,-10,-3,0,5,9,10]
 
 num_size = len(nums)
 
